@@ -1,7 +1,7 @@
 // expose.js
 
 window.addEventListener('DOMContentLoaded', init);
-
+const jsConfetti = new JSConfetti()
 function init() {
 
   var selector = document.getElementById("horn-select");
@@ -34,7 +34,6 @@ function init() {
   button.addEventListener('click', function() {
     document.getElementsByClassName("hidden")[0].play();
     if (selector.value === "party-horn" && document.getElementsByClassName("hidden")[0].volume != 0) {
-      const jsConfetti = new JSConfetti()
       jsConfetti.addConfetti()
     }
   }) 
