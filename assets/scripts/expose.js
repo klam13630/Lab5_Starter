@@ -12,7 +12,7 @@ function init() {
   }) 
 
   var vol_control = document.getElementById("volume");
-  vol_control.addEventListener('change', function() {
+  vol_control.addEventListener('input', function() {
     var vol = vol_control.value;
     var vol_img = document.querySelector("div img");
     if (vol == 0) {
